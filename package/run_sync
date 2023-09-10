@@ -1,0 +1,7 @@
+#!/bin/bash
+if ! [ -f /mnt/sync/conf/sync.conf ]; then
+    echo 'sync.conf file is not found!' 
+    cp -rv /root/sync.conf /mnt/sync/conf/
+    HOME=/mnt/sync exec /usr/bin/rslsync --nodaemon $*
+fi
+HOME=/mnt/sync exec /usr/bin/rslsync --nodaemon $*
