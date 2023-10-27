@@ -57,21 +57,11 @@ cp -rfv /etc/apt/sources.list.d{,.backup}
 
 # 写入 http 清华源
 cat << EOF | tee /etc/apt/sources.list
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+# 默认去掉了源码镜像以提高 apt update 速度
 deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
-deb-src http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
-
 deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
-deb-src http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
-
 deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
-deb-src http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
-
-deb http://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
-deb-src http://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
-
 deb http://security.debian.org/debian-security bullseye-security main contrib non-free
-deb-src http://security.debian.org/debian-security bullseye-security main contrib non-free
 EOF
 
 # 更新软件列表源
@@ -125,6 +115,9 @@ cp -rv /root/run_sync /usr/bin/
 cp -rv /root/sync.conf /mnt/sync/conf/
 chmod -v u+x /usr/bin/run_sync /usr/bin/rslsync
 rm -rfv /root/rslsync /root/run_sync
+mkdir -pv /mnt/sync/storage
+mkdir -pv /mnt/sync/data
+mkdir -pv /mnt/sync/conf
 }
 
 clean_remove(){
