@@ -115,9 +115,6 @@ cp -rv /root/run_sync /usr/bin/
 cp -rv /root/sync.conf /mnt/sync/conf/
 chmod -v u+x /usr/bin/run_sync /usr/bin/rslsync
 rm -rfv /root/rslsync /root/run_sync
-mkdir -pv /mnt/sync/storage
-mkdir -pv /mnt/sync/data
-mkdir -pv /mnt/sync/conf
 }
 
 clean_remove(){

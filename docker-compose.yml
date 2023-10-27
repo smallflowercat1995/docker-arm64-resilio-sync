@@ -11,9 +11,9 @@ services:
      - "55555:55555/udp"  
     volumes:
      - ./docker-container/sync:/mnt/sync
-     - ./docker-container/sync/storage:/mnt/sync/storage
-     - ./docker-container/sync/data:/mnt/sync/data
-     - ./docker-container/sync/conf:/mnt/sync/conf
+     #- ./docker-container/sync/storage:/mnt/sync/storage
+     #- ./docker-container/sync/data:/mnt/sync/data
+     #- ./docker-container/sync/conf:/mnt/sync/conf
     networks:
         - app_net
 networks:

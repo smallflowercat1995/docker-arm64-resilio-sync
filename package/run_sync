@@ -1,4 +1,7 @@
 #!/bin/bash
+mkdir -pv /mnt/sync/storage
+mkdir -pv /mnt/sync/data
+mkdir -pv /mnt/sync/conf
 if ! [ -f /mnt/sync/conf/sync.conf ]; then
     echo 'sync.conf file is not found!' 
     cp -rv /root/sync.conf /mnt/sync/conf/
