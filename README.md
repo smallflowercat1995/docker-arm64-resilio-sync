@@ -1,6 +1,15 @@
 # docker-arm64-resilio-sync
 ## dockerhub
-<a href="https://hub.docker.com/r/smallflowercat1995/debian-sync" target="_blank">https://hub.docker.com/r/smallflowercat1995/debian-sync</a>
+<a href="https://hub.docker.com/r/smallflowercat1995/debian-sync" target="_blank">https://hub.docker.com/r/smallflowercat1995/debian-sync</a>  
+![Watchers](https://img.shields.io/github/watchers/smallflowercat1995/docker-arm64-resilio-sync) ![Stars](https://img.shields.io/github/stars/smallflowercat1995/docker-arm64-resilio-sync) ![Forks](https://img.shields.io/github/forks/smallflowercat1995/docker-arm64-resilio-sync) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=smallflowercat1995.docker-arm64-resilio-sync) ![LICENSE](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg)
+<a href="https://star-history.com/#smallflowercat1995/docker-arm64-resilio-sync&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=smallflowercat1995/docker-arm64-resilio-sync&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=smallflowercat1995/docker-arm64-resilio-sync&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=smallflowercat1995/docker-arm64-resilio-sync&type=Date" />
+  </picture>
+</a>
+
 ## 描述
     这是一个 arm64 的 resilio sync docker 构建材料  
     闲暇之余可以通过树莓派输入资源 key 将资源同步下载  
